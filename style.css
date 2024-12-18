@@ -4,6 +4,11 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: #080808;
     color: white;
@@ -26,6 +31,8 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    /*position: fixed;  Make it sticky */
 
 }
 
@@ -217,4 +224,15 @@ fieldset {
     background-color: #ff0051;
     color: white;
 
+}
+
+
+
+/* -----------------Footer Section------------ */
+footer {
+    scroll-padding-top: unset;
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+    background-color: rgb(137, 23, 23);
 }
