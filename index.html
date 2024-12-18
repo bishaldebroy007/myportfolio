@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/77845a927b.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <script src="script.js"></script>
     <div id="header">
         <div class="container">
             <nav class="navBar">
@@ -37,38 +39,71 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti animi eveniet corporis illum illo exercitationem repellendus nemo fugit vero numquam quidem veritatis, officia omnis ea, nostrum voluptates voluptas, adipisci veniam?</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links">Skills</p>
-                        <p class="tab-links">Publications</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('publications')">Publications</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-        
-                    <div class=`tab-contents active-tab`>
-                        <ul>
-                            <li><span>HTML, CSS, JS</span><br>Fornt-End Development</li>
-                            <li><span>Python</span><br>xyz</li>
-                        </ul>
-                    </div>
+        <div id="info">
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>HTML, CSS, JS</span><br>Fornt-End Development</li>
+                    <li><span>Python</span><br>xyz</li>
+                </ul>
+            </div>
 
-                    <!-- <div class="tab-contents">
-                        <ul>
-                            <li><span>HTML, CSS, JS 2</span><br>Fornt-End Development</li>
-                            <li><span>Python 2</span><br>xyz</li>
-                        </ul>
-                    </div>
+            <div class="tab-contents" id="publications">
+                <ul>
+                    <li><span>HTML, CSS, JS 2</span><br>publications Fornt-End Development</li>
+                    <li><span>Python 2</span><br>xyz</li>
+                </ul>
+            </div>
 
-                    <div class="tab-contents">
-                        <ul>
-                            <li><span>HTML, CSS, JS 3</span><br>Fornt-End Development</li>
-                            <li><span>Python 3</span><br>xyz</li>
-                        </ul>
-                    </div> -->
-
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>HTML, CSS, JS 3</span><br> experience Fornt-End Development</li>
+                    <li><span>Python 3</span><br>xyz</li>
+                </ul>
+            </div>
+            
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>HTML, CSS, JS</span><br> Education Fornt-End Development</li>
+                    <li><span>Python</span><br>xyz</li>
+                </ul>
+            </div>
+        </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- -----------------------------Services---------------------------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list"></div>
+                <div id="serv">
+                    <i class="fa-brands fa-whmcs"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nisi eius. Nisi temporibus impedit exercitationem illo iste saepe perspiciatis aperiam, nihil neque hic dolore qui explicabo consequuntur. Maxime, laboriosam assumenda.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div id="serv">
+                    <i class="fa-brands fa-sketch"></i>
+                    <h2>Web Design 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nisi eius. Nisi temporibus impedit exercitationem illo iste saepe perspiciatis aperiam, nihil neque hic dolore qui explicabo consequuntur. Maxime, laboriosam assumenda.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div id="serv">
+                    <i class="fa-brands fa-intercom"></i>
+                    <h2>Web Design 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nisi eius. Nisi temporibus impedit exercitationem illo iste saepe perspiciatis aperiam, nihil neque hic dolore qui explicabo consequuntur. Maxime, laboriosam assumenda.</p>
+                    <a href="#">Learn More</a>
+                </div>
+        </div>
+     </div>
+
+
 </body>
 </html>
